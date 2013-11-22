@@ -26,6 +26,7 @@ Gem::Specification.new do |spec|
   #Test stuff
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "rr"
-  spec.add_development_dependency "webmock"
-  spec.add_development_dependency 'rdoc', '> 2.4.2'
+  spec.add_development_dependency "webmock", "1.8.0"
+  spec.add_development_dependency "vcr"
+  spec.add_development_dependency "rdoc", "> 2.4.2"
 end

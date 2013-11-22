@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://hall.com/api/1/services/generic/fake_room_token
+    body:
+      encoding: UTF-8
+      string: title=form_name&message=my%20text
+    headers: {}
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Fri, 22 Nov 2013 23:32:47 GMT
+      Etag:
+      - '"7215ee9c7d9dc229d2921a40e899ec5f"'
+      Set-Cookie:
+      - user_session_id=1f86e6c904997334c5fcf5fa58f392a2; domain=.hall.com; path=/;
+        HttpOnly
+      Status:
+      - 201 Created
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - DENY
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - 4c96a42cf37216ad4cac9ca8226cf16c
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '1'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ' '
+    http_version: 
+  recorded_at: Fri, 22 Nov 2013 23:32:48 GMT
+recorded_with: VCR 2.7.0
