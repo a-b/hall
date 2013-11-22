@@ -7,14 +7,38 @@ module Hall
     include HTTParty
     base_uri 'https://hall.com/api/1/'
 
-    def initialize(room_token, integration_name)
+    # Client initialization
+    #
+    # Usage:
+    #
+    #   Hall::Client.new('room_token', 'from_name')
+    #
+    # Parametrs:
+    #
+    # +room_token+::  token for your room grab it through the Add integration -> Other or https://hall.com/docs/integrations/generic/
+    #
+    # +from_name+::  defines the name used for message posting
+    #
+
+    def initialize(room_token, from_name)
       @room_token = room_token
-      @integration_name = integration_name
+      @from_name = from_name
     end
+
+    # Post a message.
+    #
+    # Usage:
+    #
+    #   post_message 'plain text'
+    #
+    #
+    # Parametrs:
+    #
+    # +text+::  plain text to be send to the chat
 
     def post_message(text)
       body ={
-        "title" => @integration_name,
+        "title" => @from_name,
         "message" => text
       }
 
