@@ -2,6 +2,12 @@
 
 Simple client for corporate chat Hall.com
 
+## TODO
+
+1. Extract config
+2. Cleanup
+3. Add tests
+
 ## Installation
 
 Add this line to your application's Gemfile:
