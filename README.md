@@ -2,12 +2,6 @@
 
 Simple client for corporate chat Hall.com
 
-## TODO
-
-1. Extract config
-2. Cleanup
-3. Add tests
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -24,9 +18,21 @@ Or install it yourself as:
 
 ## Usage
 
+```ruby
+
 require 'hall'
+
+  # Grab your room token at https://hall.com/docs/integrations/generic/
+
 hall = Hall::Client.new('room token goes here', 'integration name')
 hall.post_message 'my message'
+
+```
+
+## TODO
+
+1. Add html message support
+2. Add picture support
 
 ## Contributing
 
