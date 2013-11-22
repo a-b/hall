@@ -1,29 +1,32 @@
 require "hall/version"
-require "faraday"
-require "JSON"
+require "httparty"
 
 module Hall
 
-  HALL_ROOM_TOKEN = ""
-  HALL_INTEGRATION_NAME = "Gem Hall"
+  class Client
+    include HTTParty
+    base_uri 'https://hall.com/api/1/'
 
-  def self.message(msg_text)
-
-    conn = Faraday.new(:url => "https://hall.com") do |faraday|
-      faraday.request  :url_encoded
+    def initialize(room_token, integration_name)
+      @room_token = room_token
+      @integration_name = integration_name
     end
 
+    def post_message(text)
+      body ={
+        "title" => @integration_name,
+        "message" => text
+      }
 
-    doc ={
-      "title" => HALL_INTEGRATION_NAME,
-      "message" => msg_text
-    } 
+      options = {body: body, options: { headers: { 'ContentType' => 'application/json' } } }
 
-    conn.post do |req|
-      req.url "/api/1/services/generic/" + HALL_ROOM_TOKEN
-      req.headers['Content-Type'] = 'application/json'
-      req.body = doc.to_json
+      self.class.post(room_path, options)
     end
 
+    private
+
+    def room_path
+      '/services/generic/' + @room_token
+    end
   end
 end

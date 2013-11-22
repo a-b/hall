@@ -24,7 +24,9 @@ Or install it yourself as:
 
 ## Usage
 
-Will update soon
+require 'hall'
+hall = Hall::Client.new('room token goes here', 'integration name')
+hall.post_message 'my message'
 
 ## Contributing
 
