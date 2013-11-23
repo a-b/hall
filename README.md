@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/a-b/hall.png?branch=master)](https://travis-ci.org/a-b/hall)
 # Hall
 
-Simple client for corporate chat Hall.com
+Simple client for corporate chat [Hall.com](https://hall.com)
 
 ## Installation
 
