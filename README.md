@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/a-b/hall.png?branch=master)](https://travis-ci.org/a-b/hall) [![Code Climate](https://codeclimate.com/github/a-b/hall.png)](https://codeclimate.com/github/a-b/hall)
+[![Build Status](https://travis-ci.org/a-b/hall.png?branch=master)](https://travis-ci.org/a-b/hall) [![Code Climate](https://codeclimate.com/github/a-b/hall.png)](https://codeclimate.com/github/a-b/hall) [![Dependency Status](https://gemnasium.com/a-b/hall.png)](https://gemnasium.com/a-b/hall) 
 # Hall
 
 Simple client for corporate chat [Hall.com](https://hall.com)
