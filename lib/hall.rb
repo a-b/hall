@@ -42,15 +42,17 @@ module Hall
         "message" => text
       }
 
-      options = {body: body, options: { headers: { 'ContentType' => 'application/json' } } }
-
-      self.class.post(room_path, options)
+      self.class.post(room_path, request_options(body))
     end
 
     private
 
     def room_path
       '/services/generic/' + @room_token
+    end
+
+    def request_options(body)
+      {body: body, options: { headers: { 'ContentType' => 'application/json' } } }
     end
   end
 end
