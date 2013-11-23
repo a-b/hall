@@ -11,15 +11,15 @@ module Hall
     #
     # Usage:
     #
-    #   Hall::Client.new('room_token', 'from_name')
+    #   Hall::Client.new('room_token', 'from_name', 'url to the picture')
     #
-    # Parametrs:
+    # Params:
     #
     # +room_token+::  token for your room grab it through the Add integration -> Other or https://hall.com/docs/integrations/generic/
     #
     # +from_name+::  defines the name used for message posting
     #
-    # +from_picture+::  optional add picture to the post
+    # +from_picture+::  (optional) add picture to the post
     #
 
     def initialize(room_token, from_name, from_picture = nil)
@@ -35,7 +35,7 @@ module Hall
     #   post_message 'plain text'
     #
     #
-    # Parametrs:
+    # Params:
     #
     # +text+::  plain text to be send to the chat
 
