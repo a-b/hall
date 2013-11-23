@@ -19,10 +19,13 @@ module Hall
     #
     # +from_name+::  defines the name used for message posting
     #
+    # +from_picture+::  optional add picture to the post
+    #
 
-    def initialize(room_token, from_name)
-      @room_token = room_token
-      @from_name = from_name
+    def initialize(room_token, from_name, from_picture = nil)
+      @room_token   = room_token
+      @from_name    = from_name
+      @from_picture = from_picture
     end
 
     # Post a message.
@@ -38,7 +41,8 @@ module Hall
 
     def post_message(text)
       body ={
-        "title" => @from_name,
+        "title"   => @from_name,
+        "picture" => @from_picture,
         "message" => text
       }
 
