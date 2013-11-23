@@ -25,8 +25,8 @@ require 'hall'
 
   # Grab your room token at https://hall.com/docs/integrations/generic/
 
-hall = Hall::Client.new('room token goes here', 'integration name')
-hall.post_message 'my message'
+hall = Hall::Client.new('room token goes here', 'integration name', 'url to the picture')
+hall.post_message('my message')
 
 ```
 

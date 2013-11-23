@@ -11,7 +11,7 @@ module Hall
     #
     # Usage:
     #
-    #   Hall::Client.new('room_token', 'from_name', 'url to the picture')
+    #   client = Hall::Client.new('room_token', 'from_name', 'url to the picture')
     #
     # Params:
     #
@@ -19,8 +19,7 @@ module Hall
     #
     # +from_name+::  defines the name used for message posting
     #
-    # +from_picture+::  (optional) add picture to the post
-    #
+    # +from_picture+:: add picture to the post
 
     def initialize(room_token, from_name, from_picture = nil)
       @room_token   = room_token
@@ -32,7 +31,7 @@ module Hall
     #
     # Usage:
     #
-    #   post_message 'plain text'
+    #   client = post_message 'plain text'
     #
     #
     # Params:
