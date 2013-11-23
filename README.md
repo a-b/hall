@@ -33,6 +33,8 @@ hall.post_message 'my message'
 
 1. Add html message support
 2. Add picture support
+3. Add Rake task (require configuration)
+4. Add Capistrano
 
 ## Contributing
 
