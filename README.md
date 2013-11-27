@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/a-b/hall.png?branch=master)](https://travis-ci.org/a-b/hall) [![Code Climate](https://codeclimate.com/github/a-b/hall.png)](https://codeclimate.com/github/a-b/hall) [![Dependency Status](https://gemnasium.com/a-b/hall.png)](https://gemnasium.com/a-b/hall) [![Coverage Status](https://coveralls.io/repos/a-b/hall/badge.png?branch=master)](https://coveralls.io/r/a-b/hall?branch=master)
+[![Build Status](https://travis-ci.org/roundscope/hall.png?branch=master)](https://travis-ci.org/roundscope/hall) [![Code Climate](https://codeclimate.com/github/roundscope/hall.png)](https://codeclimate.com/github/roundscope/hall) [![Dependency Status](https://gemnasium.com/roundscope/hall.png)](https://gemnasium.com/roundscope/hall) [![Coverage Status](https://coveralls.io/repos/roundscope/hall/badge.png?branch=master)](https://coveralls.io/r/roundscope/hall?branch=master)
 # Hall
 
 Simple client for corporate chat [Hall.com](https://hall.com)

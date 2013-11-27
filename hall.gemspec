@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["a.b@usa.com"]
   spec.description   = %q{Client for corporate messanger Hall}
   spec.summary       = %q{Client for corporate messanger Hall.com allow to post message to the chat room}
-  spec.homepage      = "https://github.com/a-b/hall"
+  spec.homepage      = "https://github.com/roundscope/hall"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
