@@ -36,6 +36,15 @@ hall.post_message('my message')
 2. Add picture support *done*
 3. Add Rake task (require configuration)
 4. Add Capistrano
+5. 
+
+## FAQ
+
+- How to get room API token?
+
+https://hall.com/docs/integrations/generic/
+
+![API Token](http://take.ms/Kl1Bp)
 
 ## Contributing
 
